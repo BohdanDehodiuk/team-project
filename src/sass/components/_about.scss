@@ -101,7 +101,17 @@
   }
 }
 
-.about-description__bold {
+.about-pic {
+  background-color: aqua;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 279px;
+    opacity: 0.2;
+  }
+}
+
+.about-text__bold {
   @media screen and (max-width: 767px) {
     font-size: 12px;
   }
@@ -121,7 +131,7 @@
   }
 }
 
-.about-description__text {
+.about-text__normal {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -131,7 +141,7 @@
   color: $minor-color;
 }
 
-.about-description__btn {
+.about-text__btn {
   width: 176px;
   height: 44px;
   border: none;
@@ -143,4 +153,7 @@
   &:focus {
     background-color: $secondary-btn-color;
   }
+}
+
+.about-text-icon {
 }
