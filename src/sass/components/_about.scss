@@ -2,8 +2,14 @@
   background-color: $secondary-bcg-color;
 
   @media screen and (max-width: 767px) {
-    padding-top: 125px;
-    padding-bottom: 39px;
+    // padding-top: 125px;
+    // padding-bottom: 39px;
+    padding: 125px 20px 39px 20px;
+
+    background-image: url(/images/how-its-made/productionbg/mobile/production-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 780px;
+    background-size: contain;
   }
 
   @media screen and (min-width: 768px) {
@@ -14,6 +20,43 @@
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
     padding-bottom: 146px;
+
+    background-image: url(/images/how-its-made/productionbg/desktop/production-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0 330px;
+    background-size: contain;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .about {
+    background-image: url(/images/how-its-made/productionbg/mobile/production-bg-mobile@2x.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 3) and (max-width: 767px),
+  (min-resolution: 288dpi) and (max-width: 767px),
+  (min-resolution: 3dppx) and (max-width: 767px) {
+  .about {
+    background-image: url(/images/how-its-made/productionbg/mobile/production-bg-mobile@3x.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px) {
+  .about {
+    background-image: url(/images/how-its-made/productionbg/desktop/production-bg-desktop@2x.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 3) and (min-width: 1280px),
+  (min-resolution: 288dpi) and (min-width: 1280px),
+  (min-resolution: 3dppx) and (min-width: 1280px) {
+  .about {
+    background-image: url(/images/how-its-made/productionbg/desktop/production-bg-desktop@3x.png);
   }
 }
 
@@ -72,10 +115,6 @@
 
 .about-description {
   @media screen and (max-width: 767px) {
-    background-image: url(/images/how-its-made/productionbg/mobile/production-bg-mobile.png);
-    background-repeat: no-repeat;
-    background-position: 0 520px;
-    background-size: contain;
     flex-direction: column;
     align-items: center;
   }
@@ -84,43 +123,6 @@
 
   @media screen and (min-width: 1280px) {
     justify-content: center;
-
-    background-image: url(/images/how-its-made/productionbg/desktop/production-bg-desktop.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-  (min-resolution: 192dpi) and (max-width: 767px),
-  (min-resolution: 2dppx) and (max-width: 767px) {
-  .about-description {
-    background-image: url(/images/how-its-made/productionbg/mobile/production-bg-mobile@2x.png);
-  }
-}
-
-@media (min-device-pixel-ratio: 3) and (max-width: 767px),
-  (min-resolution: 288dpi) and (max-width: 767px),
-  (min-resolution: 3dppx) and (max-width: 767px) {
-  .about-description {
-    background-image: url(/images/how-its-made/productionbg/mobile/production-bg-mobile@3x.png);
-  }
-}
-
-@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
-  (min-resolution: 192dpi) and (max-width: 1280px),
-  (min-resolution: 2dppx) and (max-width: 1280px) {
-  .about-description {
-    background-image: url(/images/how-its-made/productionbg/desktop/production-bg-desktop@2x.png);
-  }
-}
-
-@media (min-device-pixel-ratio: 3) and (min-width: 1280px),
-  (min-resolution: 288dpi) and (max-width: 1280px),
-  (min-resolution: 3dppx) and (max-width: 1280px) {
-  .about-description {
-    background-image: url(/images/how-its-made/productionbg/desktop/production-bg-desktop@3x.png);
   }
 }
 
